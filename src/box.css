@@ -1,0 +1,30 @@
+.box{
+   
+    width:250px;
+    padding:15px;
+    margin: auto;
+}
+.aboutimg{
+    height: 150px;
+    width:150px;
+    border-radius:50%;
+}
+
+.aboutheader{
+    margin:10px 0px;
+    font-size: 28px;
+}
+
+.aboutcontent{
+    
+    font-size:10px;
+    margin:auto;
+    width:180px;
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}

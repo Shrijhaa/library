@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+.section{
+  height:1700px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.section1{
+  height:80vh;
+  background-color: rgb(41, 39, 39);
+  display:flex;
   flex-direction: column;
   align-items: center;
+  
+}
+
+.quote{
+  color:rgb(246, 244, 244);
+  font-family:Roboto Slab;
+  margin-top:25vh;
+  margin-bottom:10vh;
+
+}
+.searchbartable{
+  position:relative;
+  top:280px;
+  display:flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  place-items: center;
+  padding:20px;
+  background-color:rgb(41, 39, 39);
+  width:100%;
+  height:900px;
+  
+}
+.searchbar{
+  height:8vh;
+  width:550px;
+  background-color: white;
+  color:black;
+  padding:10px;
+  display: flex;
+  place-items: center;
+  border-radius:2px;
+ margin-top:10vh;
+ 
+ 
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+.searchbar input{
+  height:5vh;
+  width:400px;
+  text-decoration: none;
+  padding:0px;
+  border:none;
+  padding-left:15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchbar input:hover{
+  border:none;
+  text-decoration:none;
+}
+
+.searchbar input::placeholder{
+  color:rgb(145, 136, 136);
+ 
+  font-family: Roboto;
+}
+
+.searchbar div{
+  background-color: #F50057;
+  height: 15px;
+  width: 15px;
+  padding:10px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.searchbar .searchicon{
+  height: 23px;
+  width:23px;
+  margin-left:5px;
+  margin-right:5px;
+}
+
+
+.searchtable{
+  width:1012px;
+  border:1px solid white;
+  color:white;
+  padding:10px;
+  margin-top:12vh;
+  text-align: center;
+  background-color:rgb(41, 39, 39);
+ 
+  height:800px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-bottom:10vh;
+  
+
+
+}
+
+
+
+.tableheader{
+  background-color: #F50057;
+  font-weight:bold;
+  font-size: large;
+  
+  
+}
+
+.row{
+  height:50px;
+  display:flex;
+  justify-content: center;
+  place-items: center;
+    
+}
+
+
+
+
+.sno{
+  width:50px;
+}
+
+.title{
+  width:450px;
+}
+
+.author{
+  width: 200px;
+}
+
+.edition{
+  width:100px;
+}
+
+.availability{
+  width:100px;
+}
+
+.ebook{
+  width:75px;
+}
+
+.tablerowbox:nth-child(even) {
+  background:rgba(146, 145, 145, 0.342);
+} 
+
+
+
+.userprofilecard{
+  position:absolute;
 }

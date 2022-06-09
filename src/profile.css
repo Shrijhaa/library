@@ -1,0 +1,94 @@
+.profilecardbox{
+    
+    width:1000px;
+    height: 90vh;
+ 
+    padding:10px;
+    font-family: 'Roboto Slab';
+   background-color: white;
+
+  
+    
+}
+.profilecard{
+    background-color:rgb(39, 37, 37);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content:center;
+    padding:10px;
+    width:250px;
+    height:400px;
+    border-radius: 2%;
+    margin:auto;
+
+    
+}
+.profilecardup{
+
+    border-radius: 50%;
+    background-color: #f40353;
+    height:180px;
+    width:180px;
+    
+
+}
+.profilecardup img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    margin:auto;
+
+}
+.profilecarddown{
+    
+
+   
+}
+
+.profilecontent{
+    margin:10px;
+    display:flex;
+flex-direction: column;
+place-items:  center;
+justify-content: center;
+}
+
+.profilecontent p{
+    margin:5px;
+    color:white;
+}
+.profilecontent .username{
+    font-size:x-large;
+    font-weight: 500;
+    margin-bottom:10px;
+    
+}
+
+.profilecontent .userdesignation,.userid{
+    font-size:medium;
+    font-weight: 300;
+   
+}
+.profilecontent .usermailid{
+    font-size:small;
+    font-weight: 300;
+   
+}
+
+.profilecardbox .cancelbox{
+    width:30px;
+    height:28px;
+   
+   border-radius: 5px;
+   
+}
+.profilecardbox .cancelbox .cancelicon{
+    
+    width:30px;
+    height:30px;
+}
+.cancelbox:hover{
+    background-color: #f40353;
+    
+}
