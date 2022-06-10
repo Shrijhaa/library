@@ -2,7 +2,14 @@ import "./profile.css";
 import { MdCancelPresentation } from "react-icons/md";
 import React from "react";
 
-function Profile() {
+// importing redux
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+
+// importing selectors
+import { selectCurrentUser } from "../../redux/user/user.selectors";
+
+function Profile({ currentUser }) {
   return (
     <div className="profilecardbox" id="profilecardbox">
       <div className="cancelbox onc">
@@ -18,11 +25,13 @@ function Profile() {
 
         <div className="profilecarddown">
           <div className="profilecontent">
-            <p className="username">Shrijhaa</p>
-            <p className="userdesignation">
-              Student - <span className="userid">2019506086</span>
+            <p className="username">{currentUser.name}</p>
+            <p className="userdesignation">{currentUser.type}</p>
+            <p className="usermailid">{currentUser.email}</p>
+            <p className="usermailid">due: Rs {currentUser.due}</p>
+            <p className="usermailid">
+              Total Books: Rs {currentUser.bookCount}
             </p>
-            <p className="usermailid">Shrijhaaramesh@gmail.com</p>
           </div>
         </div>
       </div>
@@ -30,4 +39,8 @@ function Profile() {
   );
 }
 
-export default Profile;
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+});
+
+export default connect(mapStateToProps)(Profile);
